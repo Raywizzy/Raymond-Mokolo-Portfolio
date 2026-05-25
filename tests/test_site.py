@@ -18,6 +18,7 @@ class PortfolioSiteTests(unittest.TestCase):
             "assets/projects/maintenance.png",
             "assets/projects/smartbill.png",
             "assets/projects/powerguard.png",
+            "assets/projects/switchitup.png",
         ]:
             self.assertTrue((ROOT / path).exists(), path)
 
@@ -30,6 +31,7 @@ class PortfolioSiteTests(unittest.TestCase):
             "MaintenanceMind-CMMS",
             "SmartBill-Analyzer",
             "PowerGuard-IoT",
+            "SwitchItUp",
         ]:
             self.assertIn(f"https://github.com/Raywizzy/{repo}", html)
             self.assertIn(f"https://raywizzy.github.io/{repo}/", html)
